@@ -1,0 +1,311 @@
+/* GOOGLE FONTS START  */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+/* GOOGLE FONTS END */
+
+/* VARIABLE START  */
+:root{
+    --header-color:#87509C;
+    --header-shadow :#643A79;
+    --white : #F7F3EA;
+    --orange : #EB7D4B;
+}
+/* VARIABLE END */
+
+/* GLOBAL DESIGN START  */
+
+h2{
+    color: var(--white);
+}
+
+section h2::after{
+    content: "";
+    display: block;
+    width: 87px;
+    height: 4px;
+    background-color: rgba(0,0,0,0.2);
+    margin: auto;
+    margin-top: 16px;
+}
+
+button{
+    font-size: 1;
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 1rem 3.5rem;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* GLOBAL DESIGN END */
+
+/* HEADER DESIGN START  */
+
+#header{
+    background-color:var(--header-color);
+}
+
+header .navbar-nav a{
+    color: var(--white);
+}
+
+header .navbar-nav a.active:first-child{
+    color: var(--white);
+    background-color: var(--header-shadow);
+    border-radius: 5px;
+}
+
+header .navbar-nav a:hover{
+    background-color: var(--header-shadow);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+h1{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 42.18px;
+}
+/* HEADER DESIGN END */
+
+
+/* SERVICES DESIGN START */
+#services{
+    background-color: #17C2A4;
+}
+
+#services h3{
+    font-size: 24px;
+}
+
+#services img{
+    height: 124px;
+}
+
+
+/* SERVICES DESIGN END */
+
+/* TEAM DESIGN START */
+#team{
+    background-color: #E7F1F8;
+}
+
+#team h2,
+#team h3,
+#team p
+{
+    color: #3C4761;
+}
+
+#team h4{
+    color: #30BAE7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#team .social i{
+    background-color: #BDD1DF;
+    color: #fff;
+}
+
+/* TEAM DESIGN END */
+
+
+/* SKILL DESIGN START */
+#skill h2,
+#skill p,
+#skill h3
+ {
+    color: #3C4761;
+}
+
+/* progress bar start  */
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    /* box-shadow: 0px 30px 60px rgba(0,0,0,0.2); */
+}
+
+.box .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px , 5px);
+
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.box .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #30bae7;
+}
+
+.box .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+
+.box .percent .number h2{
+    font-size: 48px;
+}
+
+.box .percent .number h2 span{
+    font-size: 24px;
+}
+
+.box .text{
+    font-weight: 700;
+    /* color: #999; */
+    padding: 10px 0 0;
+    letter-spacing: 1px;
+}
+
+
+.box.box-2 .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 75) / 100);
+    stroke: #d74680;
+}
+
+.box.box-3 .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #15c7a8;
+}
+.box.box-4 .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 85) / 100);
+    stroke: #eb7d4b;
+}
+
+
+.box  > h6{
+    font-size: 24px;
+    color: #3C4761;
+}
+/* progress bar end */
+
+/* SKILL DESIGN END */
+
+/* PORTFOLIO SECTION START  */
+#portfolio{
+    color: #393939;
+    background-color: #ffdd99;
+    padding: 107 px ;
+}
+
+#portfolio h2{
+    color: #393939;
+}
+
+#portfolio .container > .row:nth-child(3) button{
+    background-color: #ebcc8d;
+    font-size: 18px;
+}
+
+#portfolio .container > .row:nth-child(3) button:hover{
+    background-color: #fff;
+}
+
+.work-btn{
+    background-color: #17C2A4;
+}
+/* PORTFOLIO SECTION END */
+
+
+/* ABOUT US SECTION START */
+#about-us{
+    color: #fff;
+    background-color: #D74680;
+}
+
+#about-us h2{
+    color: #fff;
+}
+
+#about-us h4{
+    color: #FFDD99;
+}
+
+.custom-about-us-col{
+    margin-bottom: 10rem;
+}
+
+/* ABOUT US SECTION END */
+
+/* CONTACT SECTION START  */
+
+#contact{
+    background-color: #3C5499;
+}
+
+#contact input,
+#contact textarea{
+    background-color: #273A71;
+    border: none;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder{
+    color: #fff;
+}
+
+.message-btn{
+    background-color: #30BAE7;
+    color: #fff;
+}
+/* CONTACT SECTION END */
+
+/* FOOTER DESIGN START  */
+footer{
+    background-color: #344B8E;
+}
+
+.social-account a,
+.social-icons a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.social-account a:hover,
+.social-icons a:hover{
+    color: #30BAE7;
+    transition: all .3s;
+}
+
+/* FOOTER DESIGN END */
